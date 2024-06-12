@@ -46,7 +46,7 @@ const login = () => {
         {/* right */}
         <div className='w-[500px] bg-white'>
           {/* fluid */}
-          <div className='max-w-[290px] mx-auto'>
+          <div className='max-w-[290px] mx-auto mt-8'>
             {/* inner parent */}
             <div>
               {/* img */}
@@ -57,10 +57,39 @@ const login = () => {
               <div className='font-extrabold text-[22px] text-[#73114B]'>Login to your Accout</div>
               {/* sm-text */}
               <div className='text-[#73114B] text-[12px]'>See what is going on with your business</div>
-            {/* input */}
+            {/* button */}
             <div className='mt-7 relative border-[#c8c6c6] border-[1px] border-[solid] rounded-[4px] w-[100%]'>
               <div className='cursor-pointer absolute mt-[6px] left-14'><img src={google.src}></img></div>
               <button placeholder='Continue with Google' className='text-[14px] text-[#828282] py-2 text-center pl-7 w-[100%]' type='button'>Continue with Google</button></div>
+            {/* sign in ------- */}
+            <div className='relative mt-4 text-center'>
+              <button className='outline-none text-[#828282] text-[12px]'>------------ or Sign in with Email ------------</button>
+            </div>
+            {/* email */}
+            <div className=' mt-6 text-[#828282] text-[14px]'>Email</div>
+            <div className='mt-1 border-[#c8c6c6] border-[1.5px] border-[solid] rounded-[3px] w-[100%]'><input placeholder='mail@gmail.com' type='email' className='pl-2 text-[14px] text-[#828282] py-2 w-[100%]'></input></div>
+            {/* password */}
+            <div className=' mt-5 text-[#828282] text-[14px]'>Password</div>
+            <div className='mt-1 border-[#c8c6c6] border-[1.5px] border-[solid] rounded-[3px] w-[100%]'><input placeholder='***********************' type='password' className='pl-2 text-[14px] text-[#828282] py-2 w-[100%]'></input></div>
+            {/* left right checkboxes container */}
+            <div className='flex justify-between items-center mt-2'>
+              {/* left */}
+              <div>
+                {/* flex */}
+                <div className='flex justify-start items-center'>
+                {/* checkbox */}
+                <div><input  className='accent-[#7F265B]' type='checkbox'></input></div>
+                {/* text */}
+                <div className='ml-2 text-[#828282] text-[11px]'>Remember Me</div>
+                </div>
+              </div>
+              {/* right */}
+              <div>
+                <div className='cursor-pointer text-[#7F265B] text-[11px] font-bold'>Forgot Password?</div>
+              </div>
+            </div>
+            {/* login button */}
+            <div className='mt-5'><button placeholder='Continue with Google' className='text-[14px] bg-[#7F265B] py-[10px] text-center rounded-[3px] w-[100%]' type='button'>Login</button></div>
             </div>
           </div>
         </div>
