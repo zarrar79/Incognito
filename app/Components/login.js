@@ -63,7 +63,7 @@ const login = () => {
               <button placeholder='Continue with Google' className='text-[14px] text-[#828282] py-2 text-center pl-7 w-[100%]' type='button'>Continue with Google</button></div>
             {/* sign in ------- */}
             <div className='relative mt-4 text-center'>
-              <button className='outline-none text-[#828282] text-[12px]'>------------ or Sign in with Email ------------</button>
+              <div className='cursor-pointer outline-none text-[#828282] text-[12px]'>------------ or Sign in with Email ------------</div>
             </div>
             {/* email */}
             <div className=' mt-6 text-[#828282] text-[14px]'>Email</div>
