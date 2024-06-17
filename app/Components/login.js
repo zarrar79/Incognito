@@ -1,9 +1,11 @@
+'use client'
 import React from 'react'
 import circle from '../../public/Assets/Circle.svg'
 import Message from '../../public/Assets/Message.svg'
 import Skeleton from '../../public/Assets/Skeleton.svg'
 import logo from '../../public/Assets/logo.svg'
 import google from '../../public/Assets/google.svg'
+import { signIn } from 'next-auth/react'
 const login = () => {
   return (
     <>
@@ -60,7 +62,7 @@ const login = () => {
             {/* button */}
             <div className='mt-7 relative border-[#c8c6c6] border-[1px] border-[solid] rounded-[4px] w-[100%]'>
               <div className='cursor-pointer absolute mt-[6px] left-14'><img src={google.src}></img></div>
-              <button placeholder='Continue with Google' className='text-[14px] text-[#828282] py-2 text-center pl-7 w-[100%]' type='button'>Continue with Google</button></div>
+              <button onClick={() =>signIn('google')} className='text-[14px] text-[#828282] py-2 text-center pl-7 w-[100%]' type='button'>Continue with Google</button></div>
             {/* sign in ------- */}
             <div className='relative mt-4 text-center'>
               <div className='cursor-pointer outline-none text-[#828282] text-[12px]'>------------ or Sign in with Email ------------</div>
