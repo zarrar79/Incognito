@@ -91,7 +91,7 @@ const login = () => {
               </div>
             </div>
             {/* login button */}
-            <div className='mt-5'><button placeholder='Continue with Google' className='text-[14px] bg-[#7F265B] text-white py-[10px] text-center rounded-[3px] w-[100%]' type='button'>Login</button></div>
+            <div className='mt-5'><button className='text-[14px] bg-[#7F265B] text-white py-[10px] text-center rounded-[3px] w-[100%]' type='button'>Login</button></div>
             </div>
           </div>
         </div>
